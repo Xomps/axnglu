@@ -15,7 +15,7 @@ npm install [-g, --save-dev] axnglu
 
 ## API
 ```typescript
-import { splitBySize, splitByParts } from 'axnglu'
+import { splitBySize, splitByParts, join } from 'axnglu'
 
 splitByParts (
   filePath: string,
