@@ -1,0 +1,44 @@
+{
+  "name": "axnglu",
+  "version": "1.0.0",
+  "description": "Tool for splitting and joining files.",
+  "scripts": {
+    "dev": "tsc --watch --pretty",
+    "build": "tsc"
+  },
+  "main": "dist/index.js",
+  "bin": {
+    "axnglu": "dist/cli.js"
+  },
+  "files": [
+    "dist/"
+  ],
+  "keywords": [
+    "filesystem",
+    "split",
+    "join",
+    "file"
+  ],
+  "author": "Xomps <xomps.x@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.0.10",
+    "@types/prompts": "^2.0.1",
+    "tslint": "^5.17.0",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "@types/minimist": "^1.2.0",
+    "minimist": "^1.2.0",
+    "ora": "^3.4.0",
+    "prompts": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xomps/axnglu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Xomps/axnglu/issues"
+  },
+  "homepage": "https://github.com/Xomps/axnglu#readme"
+}
