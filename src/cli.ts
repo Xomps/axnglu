@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import prompts from 'prompts'
-import ora from 'ora'
+import ora = require('ora')
 import parse from 'minimist'
 import { splitByParts, splitBySize, join } from './'
 import { exists } from './lib/utils'
@@ -13,7 +13,7 @@ const start = async () => {
       interactive: ['i'],
       fragments: ['f', 'parts', 'p'],
       size: ['s'],
-      removeOriginal: ['R', 'clean'],
+      removeOriginal: ['R', 'clean', 'D'],
       help: ['h']
     }
   })
@@ -34,12 +34,12 @@ Options:
   --size, -s            (String) Size of each file fragment.
   --parts, -p,
   --fragments, -f       (Number) Number of fragments/parts.
-  --clean, -R           Remove original file(s).
+  --clean, -R, -D       Remove original file(s).
   --help, -h            Displays tool info.
 
 Examples:
   axnglu split "big-file.zip" --size 250mb
-  axnglu axe "big-file.zip" -s 4.37gb -R
+  axnglu axe "big-file.zip" -s 4.37gb -D
   axnglu s "big-file.zip" --fragments 5
   axnglu join "big-file.zip.001"
   axnglu j "big-file.zip.001"

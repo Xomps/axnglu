@@ -10,7 +10,7 @@ $ axnglu join myFile.7z.001
 ## Install
 
 ```bash
-npm install [-g, --save-dev] axnglu
+npm install [-g] axnglu
 ```
 
 ## API
@@ -81,13 +81,13 @@ Options:
   --size, -s            (String) Size of each file fragment.
   --parts, -p           (Number) Number of fragments/parts.
   --fragments, -f       (Number) Number of fragments/parts.
-  --clean, -R           Remove original file(s).
+  --clean, -R, -D       Remove original file(s).
   --help, -h            Displays help
 
 
 Examples:
   axnglu split big-file.zip --size 250mb
-  axnglu axe big-file.zip -s 4.37gb -R
+  axnglu axe big-file.zip -s 4.37gb -D
   axnglu s big-file.zip --fragments 5
   axnglu join big-file.zip.001
   axnglu j big-file.zip.001
